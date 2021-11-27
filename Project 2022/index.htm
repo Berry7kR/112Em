@@ -1,0 +1,106 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    
+ <title>Food Taxi</title>   
+<link href ="style.css" type="text/css" rel="stylesheet">
+  <link href="script.js"  rel="js" >
+     <script>
+      function check(){
+          var myemail=document.getElementById("email").value;
+          if (myemail==""){
+              alert("Empty");
+          }
+              if (myemail.indexOf('@')==-1){
+                  alert("invalid email addreess ,add(@)" );
+              }
+                 
+             if (myemail.indexOf('.')==-1){
+                  alert("your email address is incomplete(.) ");
+              }
+                    else{
+                        
+                  
+                    window.alert("Thank you," + myemail);
+                          }
+      }
+         
+    </script>
+    </head>
+
+<body>
+    <div id="container">
+     <td align="right"><font size="1" face="Verdana">30 April     2021 16:19:22</font></td>
+    <div id="header">
+        
+        
+        
+     <center>
+    <h1>Food Taxi</h1>
+    </center>
+        </div>
+    </div>
+    
+     <div id="navigation">
+    <a href="index.htm">Home </a> |  <a href="Shop.html"> Shop </a> | <a href="Contact.html">Contacts </a>| <a href="About.html">About us </a>
+       <br><br>
+  <div id="content">    
+       
+</div>
+    <form name="contacts" id="contacts" action="">
+        
+    <div id ="sidebar"><img src="IMG_20211016_083755.png" width="200px" height="300px">   </div>
+     <fieldset>
+                <legend>Personal details</legend>
+            &emsp;&emsp;&emsp;&ensp;&ensp; <label for="enail">Email:</label>
+        <input type="text" name="email" id="email" placeholder="example@mail.com" autofocus><br><br>
+           <label for="Contacts">Contact number:</label>
+        <input type="text" name="Contacts" id="Contacts">
+         <br><br>
+                </fieldset>
+            
+            
+                <fieldset><legend>Select your location</legend>
+                 <label for="Location">Location:</label>
+        <input type="t" name="Contacts" id="Contacts">
+            <input type="button" value="Search" onclick="" >
+            </fieldset>
+            <br><br>
+     <input type="button" value="proceed" href="shop.html"  onclick="check()"> &emsp;&emsp;
+        <input type="reset" name ="reset">
+          <button onclick="Validation()">Submit</button> <input type="reset" value="Clear">
+           
+    </form>
+    </div>
+    
+    <div class="wrapper display">
+    <div class="emoji">
+        
+      <div class="emoji1" data-title="Like">
+          <i class="fas fa-thumbs-up"></i>
+          
+        </div>  
+        
+        </div>
+  
+        <div class="emoji">
+        <div class="emoji3 data-title="HaHa">
+         <i class="fas fa-laugh-squint"></i>
+        </div>
+  
+        
+        <div class="emoji">
+        <div class="emoji2 data-title="Wow">
+         <i class="fas fa-surprise"></i>
+        </div>
+        </div>
+        
+        
+                                   </div>
+    </div>
+ </body>
+ 
+
+
+
+</html>
